@@ -7,28 +7,28 @@ from helpers.filters import other_filters2
 
 @Client.on_message(other_filters2)
 async def start(_, message: Message):
-    await message.reply_sticker("CAACAgUAAxkBAAItmWD3OC0m03OLIcpSzfiJMCDxm4xJAAKFAwACH8C5V-U9VextES_XIAQ")
+    await message.reply_sticker("CAACAgEAAxkBAAECNFFhI8bt\_qtB0MlwXM460G-0-d8dvgACrAwAAgLkKBmr9kmZy4BYqyAE")
     await message.reply_text(
         f"""**Hey, I'm {bn} 🎀
 ɪ ᴄᴀɴ ᴘʟᴀʏ ᴍᴜsɪᴄ ɪɴ ʏᴏᴜʀ  ɢʀᴏᴜᴩ ᴠᴏɪᴄᴇ ᴄʜᴀᴛ. 
-ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴩ ᴀɴᴅ ᴘʟᴀʏ ᴍᴜsɪᴄ ғʀᴇᴇʟʏ 🤗 Developed By [ᴡᴀʀʙᴏᴛᴢ](https://t.me/thewarbotZ) !**
+ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴩ ᴀɴᴅ ᴘʟᴀʏ ᴍᴜsɪᴄ ғʀᴇᴇʟʏ 🤗 Developed By [ᴡᴀʀʙᴏᴛᴢ](https://t.me/rosebakthan) !**
 
         """,
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "🔨Source Code🔨", url="https://github.com/War-Legend/camillavcbot2.0")
+                        "🔨Nothing🔨", url="https://github.com/kidiloskahyper45")
                   ],[
                     InlineKeyboardButton(
-                        "sᴜᴘᴘᴏʀᴛ👿", url="https://t.me/warbotzsupport"
+                        "sᴜᴘᴘᴏʀᴛ👿", url="https://t.me/rosebakthan"
                     ),
                     InlineKeyboardButton(
-                        "ᴄʜᴀɴɴᴇʟ", url="https://t.me/thewarbotz"
+                        "ᴄʜᴀɴɴᴇʟ", url="https://t.me/rosebakthan"
                     )    
                 ],[ 
                     InlineKeyboardButton(
-                        "➕ᴀᴅᴅ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ➕", url="https://t.me/camillamusicbot?startgroup=true"
+                        "➕ᴀᴅᴅ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ➕", url="https://t.me/Wlaker95_bot?startgroup=true"
                     )]
             ]
         ),
@@ -42,7 +42,7 @@ async def gstart(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "🔊Uᴩᴅᴀᴛᴇs", url="https://t.me/thewarbotz")
+                        "🔊Uᴩᴅᴀᴛᴇs", url="https://t.me/rosebakthan")
                 ]
             ]
         )
