@@ -92,7 +92,7 @@ async def generate_cover(requested_by, title, views, duration, thumbnail):
                    & ~filters.via_bot)
 async def play(_, message: Message):
 
-    lel = await message.reply("🔄 **Processing...**")
+    lel = await message.reply("🔄 **Processing** 🔄")
     
     administrators = await get_administrators(message.chat)
     chid = message.chat.id
@@ -152,8 +152,8 @@ async def play(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        text="Channel 🔊",
-                        url="https://t.me/warbotz")
+                        text="🔰 Group 🔰",
+                        url="https://t.me/ankimusicgroup")
                    
                 ]
             ]
@@ -215,14 +215,14 @@ async def play(_, message: Message):
                     ]
                 )
         if (dur / 60) > DURATION_LIMIT:
-             await lel.edit(f"❌ Videos longer than {DURATION_LIMIT} minutes aren't allowed to play!")
+             await lel.edit(f"❌ Videos longer than ❌{DURATION_LIMIT} minutes aren't allowed to play!")
              return
         requested_by = message.from_user.first_name
         await generate_cover(requested_by, title, views, duration, thumbnail)     
         file_path = await converter.convert(youtube.download(url))
     else:
         if len(message.command) < 2:
-            return await lel.edit("🧐 **What's the song you want to play?**")
+            return await lel.edit(" 🤔**What's the song you want to play?**")
         await lel.edit("🔎 **Finding the song...**")
         query = message.text.split(None, 1)[1]
         # print(query)
@@ -249,7 +249,7 @@ async def play(_, message: Message):
                 
         except Exception as e:
             await lel.edit(
-                "❌ Song not found.\n\nTry another song or maybe spell it properly."
+                "❌ Song not found ❌.\n\nTry another song or maybe spell it properly."
             )
             print(str(e))
             return
@@ -269,7 +269,7 @@ async def play(_, message: Message):
             )
         
         if (dur / 60) > DURATION_LIMIT:
-             await lel.edit(f"❌ Videos longer than {DURATION_LIMIT} minutes aren't allowed to play!")
+             await lel.edit(f"❌ Videos longer than ❌{DURATION_LIMIT} minutes aren't allowed to play!")
              return
         requested_by = message.from_user.first_name
         await generate_cover(requested_by, title, views, duration, thumbnail)  
