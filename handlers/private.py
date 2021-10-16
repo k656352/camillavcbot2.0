@@ -7,11 +7,11 @@ from helpers.filters import other_filters2
 
 @Client.on_message(other_filters2)
 async def start(_, message: Message):
-    await message.reply_sticker("CAACAgUAAxkBAAECNFZhI8kJRPUvPzAO8dzVJppN0OOAHQACRQIAAr\_sqVQp8T9O6Mf0eSAE")
+    await message.reply_text("How Are You 🥰")
     await message.reply_text(
         f"""**Hey, I'm {bn} 🎀
-ɪ ᴄᴀɴ ᴘʟᴀʏ ᴍᴜsɪᴄ ɪɴ ʏᴏᴜʀ  ɢʀᴏᴜᴩ ᴠᴏɪᴄᴇ ᴄʜᴀᴛ. 
-ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴩ ᴀɴᴅ ᴘʟᴀʏ ᴍᴜsɪᴄ ғʀᴇᴇʟʏ 🤗 Developed By [BOT](https://t.me/rosebakthan) !**
+ɪ ᴄᴀɴ ᴘʟᴀʏ ᴍᴜsɪᴄ ɪɴ ʏᴏᴜʀ  ɢʀᴏᴜᴩ ᴠᴏɪᴄᴇ ᴄʜᴀᴛ. 🇱🇰
+ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴩ ᴀɴᴅ ᴘʟᴀʏ ᴍᴜsɪᴄ ғʀᴇᴇʟʏ 🤗 Developed By [BOT](https://t.me/tujan2) !**
 
         """,
         reply_markup=InlineKeyboardMarkup(
@@ -21,14 +21,14 @@ async def start(_, message: Message):
                         "🔨Nothing🔨", url="https://github.com/kidiloskahyper45")
                   ],[
                     InlineKeyboardButton(
-                        "sᴜᴘᴘᴏʀᴛ👿", url="https://t.me/rosebakthan"
+                        "sᴜᴘᴘᴏʀᴛ Group 😉", url="https://t.me/ankimusicgroup"
                     ),
                     InlineKeyboardButton(
                         "ᴄʜᴀɴɴᴇʟ", url="https://t.me/Malayalam_Chatting_Links"
                     )    
                 ],[ 
                     InlineKeyboardButton(
-                        "➕ᴀᴅᴅ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ➕", url="https://t.me/Wlaker95_bot?startgroup=true"
+                        "➕ᴀᴅᴅ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘs➕", url="https://t.me/Wlaker95_bot?startgroup=true"
                     )]
             ]
         ),
@@ -37,7 +37,7 @@ async def start(_, message: Message):
 
 @Client.on_message(filters.command("start") & ~filters.private & ~filters.channel)
 async def gstart(_, message: Message):
-      await message.reply_text("""**Yes iᴍ online ✅**""",
+      await message.reply_text("""**Yes iᴍ online 🇱🇰**""",
       reply_markup=InlineKeyboardMarkup(
             [
                 [
